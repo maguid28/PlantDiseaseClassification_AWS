@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Result</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .result-container {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .result-label {
+            font-weight: bold;
+        }
+        .result-value {
+            margin-left: 10px;
+        }
+        .upload-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .upload-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function checkClassification() {
+            var imageId = "{{ image_id }}";
+            $.ajax({
+                url: "/check_classification/" + imageId,
+                type: "GET",
+                success: function(response) {
+                    if (response.predicted_class) {
+                        $("#predicted-class").text(response.predicted_class);
+                        $("#confidence-score").text(response.confidence_score);
+                        $("#result-container").show();
+                    } else {
+                        setTimeout(checkClassification, 1000);  // Retry after 1 second
+                    }
+                }
+            });
+        }
+        $(document).ready(function() {
+            $("#result-container").hide();
+            checkClassification();
+        });
+    </script>
+</head>
+<body>
+    <h1>Classification Result</h1>
+    <p>Image ID: {{ image_id }}</p>
+    <div id="result-container" class="result-container">
+        <p>Classification Result:</p>
+        <p><span class="result-label">Predicted Class:</span><span class="result-value" id="predicted-class"></span></p>
+        <p><span class="result-label">Confidence Score:</span><span class="result-value" id="confidence-score"></span></p>
+    </div>
+    <a href="{{ url_for('index') }}" class="upload-link">Upload another image</a>
+</body>
+</html>
