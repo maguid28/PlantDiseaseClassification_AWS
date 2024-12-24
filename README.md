@@ -4,11 +4,8 @@
 
 ![UI Classification results](/img/classification_results.png)
 
-## Abstract
-In this project, an end-to-end system for classifying various plant diseases using Amazon Web Services (AWS) has been developed. This system allows users to upload images of plants through a web interface, which are then processed and analyzed using a machine learning model deployed on AWS SageMaker. The classification results, along with confidence scores, are saved in Amazon DynamoDB.
-
 ## Introduction
-The main goal of this project is to design a user-friendly web platform where users can upload plant images and receive automated disease classification. This system utilizes AWS to support the creation, deployment, and scaling of machine learning applications.
+In this project, an end-to-end system for classifying various plant diseases using Amazon Web Services (AWS) has been developed to allow users to upload images of plants through a web interface, which are then processed and analyzed using a machine learning model deployed on AWS SageMaker. The classification results, along with confidence scores, are saved in Amazon DynamoDB.
 
 ## AI Ecosystem Architecture Used
 The plant disease classification application utilizes various AWS components to create a comprehensive and scalable architecture. Key components include:
