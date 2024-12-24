@@ -30,7 +30,7 @@ The dataset chosen was the Plant Village disease dataset.
 
 
 ## Performance Results
-The system achieved a validation accuracy of 94% after three epochs of training.
+The model achieved a validation accuracy of 94% after three epochs of training.
 
 ![Model Performance Metric](/img/performance_metrics.png)
 
