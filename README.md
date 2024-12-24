@@ -41,7 +41,7 @@ The model achieved a validation accuracy of 94% after three epochs of training.
 ![Confusion Matrix](/img/confusion_matrix.png)
 
 ## Scalability Considerations
-The system's scalability is supported by AWS services, ensuring it can handle increased demands:
+The system's scalability is well supported by AWS services:
 
 - **Data Storage Scalability (S3):** Handles growing amounts of image data.
 - **Compute Scalability (EC2 Auto Scaling):** Manages varying compute needs.
@@ -49,7 +49,7 @@ The system's scalability is supported by AWS services, ensuring it can handle in
 - **Database Scalability (DynamoDB):** Scales horizontally to manage increased traffic and data.
 
 ## Conclusion
-The project demonstrates the potential of AWS in deploying and scaling machine learning applications efficiently, providing a robust solution for plant disease classification that can be extended to other domains.
+The project demonstrates the potential of AWS in deploying and scaling machine learning applications efficiently, providing a robust solution for plant disease classification that can be easily extended to other domains.
 
 
 
