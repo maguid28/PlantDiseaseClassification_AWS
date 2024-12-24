@@ -31,7 +31,7 @@ The model employed is based on the Xception architecture, known for its efficien
 
 
 ## Performance Results
-The system achieved a validation accuracy of 95% after three epochs of training.
+The system achieved a validation accuracy of 94% after three epochs of training.
 
 ![Model Performance Metric](/img/performance_metrics.png)
 
