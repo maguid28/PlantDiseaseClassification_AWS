@@ -36,8 +36,6 @@ The model achieved a validation accuracy of 94% after three epochs of training.
 
 ![Model Performance Graph](img/accurancy_loss_plots.png)
 
-## Confusion Matrix
-
 ![Confusion Matrix](/img/confusion_matrix.png)
 
 ## Scalability Considerations
