@@ -23,8 +23,7 @@ The dataset chosen was the Plant Village disease dataset.
 ![Plant Village dataset examples](/img/plant_village_examples.png)
 
 
-## Model Description
-The model employed is based on the Xception architecture, known for its efficiency in image classification tasks. This model was trained using the Plant Village dataset and demonstrates high accuracy.
+## Model
 
 ![Xception Model Diagram](/img/xception_architecture.png)
 
