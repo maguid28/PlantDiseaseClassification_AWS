@@ -1,5 +1,9 @@
 # Designing and Implementing a User-Friendly Plant Disease Classification System in the AWS Ecosystem: Insights and Practical Approaches
 
+![UI upload image](/img/upload_ui.png)
+
+![UI Classification results](/img/classification_results.png)
+
 ## Abstract
 In this project, an end-to-end system for classifying various plant diseases using Amazon Web Services (AWS) has been developed. This system allows users to upload images of plants through a web interface, which are then processed and analyzed using a machine learning model deployed on AWS SageMaker. The classification results, along with confidence scores, are saved in Amazon DynamoDB.
 
@@ -22,6 +26,10 @@ The model employed is based on the Xception architecture, known for its efficien
 
 ![Xception Model Diagram](/img/xception_architecture.png)
 
+## Dataset Used
+The dataset chosen was the Plant Village disease dataset.
+![Plant Village dataset examples](/img/plant_village_examples.png)
+
 ## Performance Results
 The system achieved a validation accuracy of 95% after three epochs of training.
 
@@ -43,6 +51,8 @@ The system's scalability is supported by AWS services, ensuring it can handle in
 
 ## Conclusion
 The project demonstrates the potential of AWS in deploying and scaling machine learning applications efficiently, providing a robust solution for plant disease classification that can be extended to other domains.
+
+
 
 
 
