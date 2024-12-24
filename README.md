@@ -20,12 +20,18 @@ The plant disease classification application utilizes various AWS components to 
 ## Model Description
 The model employed is based on the Xception architecture, known for its efficiency in image classification tasks. This model was trained using the Plant Village dataset and demonstrates high accuracy.
 
-![Xception Model Diagram](path_to_xception_model_diagram)
+![Xception Model Diagram](/img/xception_architecture.png)
 
 ## Performance Results
 The system achieved a validation accuracy of 95% after three epochs of training.
 
-![Model Performance Graph](path_to_model_performance_graph)
+![Model Performance Metric](/img/performance_metrics.png)
+
+![Model Performance Graph](img/accurancy_loss_plots.png)
+
+## Confusion Matrix
+
+![Confusion Matrix](/img/confusion_matrix.png)
 
 ## Scalability Considerations
 The system's scalability is supported by AWS services, ensuring it can handle increased demands:
@@ -37,6 +43,9 @@ The system's scalability is supported by AWS services, ensuring it can handle in
 
 ## Conclusion
 The project demonstrates the potential of AWS in deploying and scaling machine learning applications efficiently, providing a robust solution for plant disease classification that can be extended to other domains.
+
+
+
 
 ## References
 - AWS Documentation on various services like S3, SageMaker, and DynamoDB.
