@@ -7,7 +7,7 @@
 ## Introduction
 In this project, an end-to-end system for classifying various plant diseases using Amazon Web Services (AWS) has been developed to allow users to upload images of plants through a web interface, which are then processed and analyzed using a machine learning model deployed on AWS SageMaker. The classification results, along with confidence scores, are saved in Amazon DynamoDB.
 
-## AI Ecosystem Architecture Used
+## AWS Architecture
 The plant disease classification application utilizes various AWS components to create a comprehensive and scalable architecture. Key components include:
 
 - **Web Interface (EC2 Instance):** Hosts the Flask-based web application.
@@ -18,14 +18,17 @@ The plant disease classification application utilizes various AWS components to 
 
 ![Architecture Diagram](/img/aws_architecture.png)
 
+## Dataset Used
+The dataset chosen was the Plant Village disease dataset.
+![Plant Village dataset examples](/img/plant_village_examples.png)
+
+
 ## Model Description
 The model employed is based on the Xception architecture, known for its efficiency in image classification tasks. This model was trained using the Plant Village dataset and demonstrates high accuracy.
 
 ![Xception Model Diagram](/img/xception_architecture.png)
 
-## Dataset Used
-The dataset chosen was the Plant Village disease dataset.
-![Plant Village dataset examples](/img/plant_village_examples.png)
+
 
 ## Performance Results
 The system achieved a validation accuracy of 95% after three epochs of training.
